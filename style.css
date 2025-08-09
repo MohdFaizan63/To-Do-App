@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background : linear-gradient(135deg , #153677, #4e085f) ;
+    padding: 10px;
+}
+
+.todobx{
+    text-align: center;
+    position: absolute;
+    background: #fff;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.h1t h1{
+text-align: left;
+font-weight: 700;
+
+margin-bottom: 30px;
+}
+
+.inputbtn{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px 20px;
+}
+
+.inputbtn input{
+    border: 0;
+    outline: 0;
+    width: 80%;
+    padding: 20px 80px;
+    font-weight: 500;
+    background: #efeded;
+}
+
+.inputbtn button {
+    border: 0;
+    outline: 0;
+    padding: 20px 30px;
+    background: orangered;
+    color: white; /* ✅ Optional: for better contrast */
+    font-weight: bold; /* ✅ Optional: for better UI */
+    cursor: pointer;
+}
+
+
+.listItem{
+    list-style: none;
+    text-align: left;
+    margin: 30px 30px;
+}
+
+.listItem li{
+    font-size: 18px;
+    font-weight: 550;
+    padding: 10px;
+}
+
+.listItem li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 40px;
+
+}
+
+.listItem li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+.listItem li.checked::before{
+    background-image: url(square.png);
+}
+
+.listItem ul li span{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    cursor: pointer;
+   width: 40px;
+   height: 40px;
+   font-size: 22px;
+   text-align: center;
+
+}
+
+.listItem ul li span:hover{
+    background: #d0cbcb;
+}
